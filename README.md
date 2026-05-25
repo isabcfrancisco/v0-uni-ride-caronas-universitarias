@@ -1,30 +1,103 @@
-# UniRide caronas universitárias
+# UniRide — Caronas Universitárias
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+Aplicação web de caronas universitárias desenvolvida com Next.js, TypeScript e shadcn/ui. Gerada via [v0.app](https://v0.app) e hospedada na Vercel.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/isacorreafrancisco-1218s-projects/v0-uni-ride-caronas-universitarias)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/h8OiUifiRDK)
+🌐 **Acesse:** [vercel.com/isacorreafrancisco-1218s-projects/v0-uni-ride-caronas-universitarias](https://vercel.com/isacorreafrancisco-1218s-projects/v0-uni-ride-caronas-universitarias)
 
-## Overview
+---
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## Índice
 
-## Deployment
+- [Visão Geral](#visão-geral)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Como Rodar Localmente](#como-rodar-localmente)
+- [Deploy](#deploy)
 
-Your project is live at:
+---
 
-**[https://vercel.com/isacorreafrancisco-1218s-projects/v0-uni-ride-caronas-universitarias](https://vercel.com/isacorreafrancisco-1218s-projects/v0-uni-ride-caronas-universitarias)**
+## Visão Geral
 
-## Build your app
+UniRide é uma plataforma voltada para estudantes universitários que desejam compartilhar ou encontrar caronas. O projeto foi prototipado e gerado com o v0.app, utilizando a stack moderna do ecossistema Next.js com componentes acessíveis do shadcn/ui.
 
-Continue building your app on:
+---
 
-**[https://v0.app/chat/h8OiUifiRDK](https://v0.app/chat/h8OiUifiRDK)**
+## Tecnologias Utilizadas
 
-## How It Works
+| Tecnologia              | Uso                                                              |
+|-------------------------|------------------------------------------------------------------|
+| Next.js 16              | Framework React com App Router e suporte a RSC                   |
+| React 19                | Biblioteca de interface                                          |
+| TypeScript              | Tipagem estática                                                 |
+| Tailwind CSS v4         | Estilização utilitária                                           |
+| shadcn/ui               | Biblioteca de componentes (estilo New York, baseada em Radix UI) |
+| Radix UI                | Primitivos de UI acessíveis                                      |
+| Zod                     | Validação de esquemas e formulários                              |
+| React Hook Form         | Gerenciamento de formulários                                     |
+| Lucide React            | Ícones                                                           |
+| Vercel Analytics        | Monitoramento de uso                                             |
+| pnpm                    | Gerenciador de pacotes                                           |
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+---
+
+## Estrutura do Projeto
+
+```
+v0-uni-ride-caronas-universitarias/
+├── app/                  # Rotas e páginas (Next.js App Router)
+│   └── globals.css       # Estilos globais e variáveis CSS
+├── components/           # Componentes da aplicação
+│   └── ui/               # Componentes shadcn/ui
+├── lib/                  # Utilitários e helpers
+├── styles/               # Estilos adicionais
+├── public/               # Arquivos estáticos
+├── components.json       # Configuração do shadcn/ui
+├── next.config.mjs       # Configuração do Next.js
+├── tailwind.config       # Configuração do Tailwind CSS
+├── tsconfig.json         # Configuração do TypeScript
+└── package.json          # Dependências e scripts
+```
+
+---
+
+## Como Rodar Localmente
+
+**Pré-requisitos:** Node.js 18+ e pnpm instalados.
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/isabcfrancisco/v0-uni-ride-caronas-universitarias.git
+cd v0-uni-ride-caronas-universitarias
+```
+
+2. Instale as dependências:
+
+```bash
+pnpm install
+```
+
+3. Inicie o servidor de desenvolvimento:
+
+```bash
+pnpm dev
+```
+
+A aplicação estará disponível em `http://localhost:3000`.
+
+---
+
+## Deploy
+
+O projeto é sincronizado automaticamente com a Vercel a partir da branch `main`. Qualquer push aciona um novo deploy.
+
+Para fazer deploy manual via CLI:
+
+```bash
+pnpm build
+vercel --prod
+```
+
+---
+
+*Projeto gerado com [v0.app](https://v0.app) · Hospedado na [Vercel](https://vercel.com)*
